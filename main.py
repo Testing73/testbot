@@ -7,6 +7,11 @@ from flask import Flask, request
 app = Flask(__name__)
 
 
+@app.route("/", method=["GET"])
+def home_view():
+    return "<h2>Chatbot Prototype</h2>"
+
+
 @app.route("/chatbot", methods=['GET', 'POST'])
 def main():
     reference = {'share_report': 'report_sharing', 'greet': 'utter_greet', 'goodbye': 'utter_goodbye',
