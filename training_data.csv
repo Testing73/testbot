@@ -1,0 +1,675 @@
+text,intent,text_entity
+yes,affirm,yes
+indeed,affirm,indeed
+of course,affirm,of course
+that sounds good,affirm,that sounds good
+okay,affirm,okay
+yeah,affirm,yeah
+sure,affirm,sure
+carry on,affirm,carry on
+sure,affirm,sure
+yay,affirm,yay
+yeah,affirm,yeah
+yes accept please,affirm,yes accept please
+ok,affirm,ok
+great,affirm,great
+cool,affirm,cool
+oh cool,affirm,oh cool
+go for it,affirm,go for it
+yes,affirm,yes
+yep,affirm,yep
+fine,affirm,fine
+"yep, will do thank you",affirm,"yep, will do thank you"
+all right,affirm,all right
+very well,affirm,very well
+alright,affirm,alright
+Yup,affirm,Yup
+"Yeah, sure",affirm,"Yeah, sure"
+definitely,affirm,definitely
+surelyFF,affirm,surelyFF
+when was scira created?,birthday,when was scira created?
+when scira bot was invented?,birthday,when scira bot was invented?
+when was scira made?,birthday,when was scira made?
+when was Scira built?,birthday,when was Scira built?
+when was Scira developed?,birthday,when was Scira developed?
+born,birthday,born
+day_time of birth,birthday,day_time of birth
+dob,birthday,dob
+DOB,birthday,DOB
+birth day_time?,birthday,birth day_time?
+"Scira, your birthday?",birthday,"Scira, your birthday?"
+birthday,birthday,birthday
+"Scira, when is your birthday?",birthday,"Scira, when is your birthday?"
+When are you born?,birthday,When are you born?
+when you born?,birthday,when you born?
+how old are you?,birthday,how old are you?
+how old are you?,birthday,how old are you?
+i feel bored,bored,i feel bored
+Entertain me,bored,Entertain me
+upset,bored,upset
+I'm bored,bored,I'm bored
+I don't know what to do,bored,I don't know what to do
+I have nothing to do,bored,I have nothing to do
+are you a bot?,bot_challenge,are you a bot?
+are you a human?,bot_challenge,are you a human?
+am I talking to a bot?,bot_challenge,am I talking to a bot?
+am I talking to a human?,bot_challenge,am I talking to a human?
+what are you?,bot_challenge,what are you?
+who are you?,bot_challenge,who are you?
+what can i call you?,bot_challenge,what can i call you?
+how can i call you?,bot_challenge,how can i call you?
+What's your name?,bot_challenge,What's your name?
+What is your name?,bot_challenge,What is your name?
+What should I call you?,bot_challenge,What should I call you?
+How should  I call you?,bot_challenge,How should  I call you?
+"tell me, what are you?",bot_challenge,"tell me, what are you?"
+"tell me, who are you?",bot_challenge,"tell me, who are you?"
+what people calls you?,bot_challenge,what people calls you?
+How people calls you?,bot_challenge,How people calls you?
+Do you got a name?,bot_challenge,Do you got a name?
+you got any name?,bot_challenge,you got any name?
+got a name?,bot_challenge,got a name?
+you got a name?,bot_challenge,you got a name?
+got a name?,bot_challenge,got a name?
+what is your name?,bot_challenge,what is your name?
+check inr value,check_currency_value,check [inr](from_curr) value
+check canadian dollars value,check_currency_value,check [canadian dollars](from_curr) value
+what is aud value,check_currency_value,what is [aud](from_curr) value
+how much is the value of jpy,check_currency_value,how much is the value of [jpy](from_curr)
+how much is indian rupee,check_currency_value,how much is [indian rupee](from_curr)
+value of yen,check_currency_value,value of [yen](from_curr)
+dollar value,check_currency_value,[dollar](from_curr) value
+currency value for inr?,check_currency_value,currency value for [inr](from_curr)?
+check value of yen,check_currency_value,check value of [yen](from_curr)
+check value of inr,check_currency_value,check value of [inr](from_curr)
+check the value of inr,check_currency_value,check the value of [inr](from_curr)
+currency value of eur,check_currency_value,currency value of [eur](from_curr)
+what's the currency value of yen,check_currency_value,what's the currency value of [yen](from_curr)
+what is the value of usd,check_currency_value,what is the value of [usd](from_curr)
+how much is 1 usd,check_currency_value,how much is 1 [usd](from_curr)
+cost of eur,check_currency_value,cost of [eur](from_curr)
+how much is jpy,check_currency_value,how much is [jpy](from_curr)
+1 inr,check_currency_value,1 [inr](from_curr)
+30 eur,check_currency_value,30 [eur](from_curr)
+inr in usd,check_currency_value,[inr](from_curr) in usd
+yen in usd,check_currency_value,[yen](from_curr) in usd
+usd rate,check_currency_value,[usd](from_curr) rate
+inr,check_currency_value,[inr](from_curr)
+cad rate,check_currency_value,[cad](from_curr) rate
+rate of eur,check_currency_value,rate of [eur](from_curr)
+usd rate,check_currency_value,[usd](from_curr) rate
+what is the value of inr,check_currency_value,what is the value of [inr](from_curr)
+Compare you and Alexa who is better,compare_with_alexa,Compare you and Alexa who is better
+Compare yourself with Alexa,compare_with_alexa,Compare yourself with Alexa
+tell about Alexa,compare_with_alexa,tell about Alexa
+what do you think about Alexa,compare_with_alexa,what do you think about Alexa
+Is bixby better than you and siri,compare_with_alexa,Is bixby better than you and siri
+Can alexa beat you,compare_with_alexa,Can alexa beat you
+cortana vs alexa . Who will win?,compare_with_alexa,cortana vs alexa . Who will win?
+I like Alexa. She is a great assistant,compare_with_alexa,I like Alexa. She is a great assistant
+Alexa vs you. Who will win?,compare_with_alexa,Alexa vs you. Who will win?
+how good are you compared to alexa,compare_with_alexa,how good are you compared to alexa
+Compare you and Bixby. who is better,compare_with_bixby,Compare you and Bixby. who is better
+Compare yourself with Bixby,compare_with_bixby,Compare yourself with Bixby
+tell about bixby,compare_with_bixby,tell about bixby
+what do you think about bixby,compare_with_bixby,what do you think about bixby
+Is bixby better than you and alexa,compare_with_bixby,Is bixby better than you and alexa
+Can bixby beat you,compare_with_bixby,Can bixby beat you
+bixby vs you . Who will win?,compare_with_bixby,bixby vs you . Who will win?
+I like bixby. she is a great assistant,compare_with_bixby,I like bixby. she is a great assistant
+Compare you and Cortana. who is better,compare_with_cortana,Compare you and Cortana. who is better
+Compare yourself with Cortana,compare_with_cortana,Compare yourself with Cortana
+tell about Cortana,compare_with_cortana,tell about Cortana
+what do you think about Cortana?,compare_with_cortana,what do you think about Cortana?
+Is Cortana better than you and bixby,compare_with_cortana,Is Cortana better than you and bixby
+Can Cortana beat you?,compare_with_cortana,Can Cortana beat you?
+Cortana vs siri . Who will win?,compare_with_cortana,Cortana vs siri . Who will win?
+I like cortana. she is a great assistant,compare_with_cortana,I like cortana. she is a great assistant
+Compare you and google assistant. who is better,compare_with_google_assistant,Compare you and google assistant. who is better
+Compare yourself with google assistant,compare_with_google_assistant,Compare yourself with google assistant
+tell about google assistant,compare_with_google_assistant,tell about google assistant
+what do you think about google assistant,compare_with_google_assistant,what do you think about google assistant
+Is google assistant better than you and alexa,compare_with_google_assistant,Is google assistant better than you and alexa
+Can google assistant beat you,compare_with_google_assistant,Can google assistant beat you
+google assistant vs alexa . Who will win?,compare_with_google_assistant,google assistant vs alexa . Who will win?
+I like google assistant. she is great.,compare_with_google_assistant,I like google assistant. she is great.
+Compare you and Siri. who is better,compare_with_siri,Compare you and Siri. who is better
+Compare yourself with Siri,compare_with_siri,Compare yourself with Siri
+tell about Siri,compare_with_siri,tell about Siri
+what do you think about Siri,compare_with_siri,what do you think about Siri
+Is Siri better than you and alexa,compare_with_siri,Is Siri better than you and alexa
+Can Siri beat you,compare_with_siri,Can Siri beat you
+Siri vs you . Who will win?,compare_with_siri,Siri vs you . Who will win?
+how goood are you compared with siri,compare_with_siri,how goood are you compared with siri
+i want to create an event.,create_event,i want to create an event.
+schedule a meeting for resource requirement by tomorrow at 10:30am,create_event,schedule a meeting for [resource requirement](title) by [tomorrow](day_time) at [10:30am](time)
+i want to schedule a meeting,create_event,i want to schedule a meeting
+schedule a meeting,create_event,schedule a meeting
+create a meeting,create_event,create a meeting
+schedule an event,create_event,schedule an event
+please help me to create a meeting for scrum discussion for every monday exactly at 9:55,create_event,please help me to create a meeting for [scrum discussion](title) for [every monday](day_time) exactly at [9:55](time)
+help me to create a meeting,create_event,help me to create a meeting
+i would like to create a meeting regarding strategy planning,create_event,i would like to create a meeting regarding [strategy planning](title)
+create a meeting,create_event,create a meeting
+create a meeting,create_event,create a meeting
+schedule a meeting at 9:00am,create_event,schedule a meeting at [9:00am](time)
+schedule a meeting tomorrow by 11:00 am for strategy planning,create_event,schedule a meeting [tomorrow](day_time) by 11:00 am for [strategy planning](title)
+who created you?,created,who created you?
+who invented scira,created,who invented scira
+who is  your father,created,who is  your father
+who developed you,created,who developed you
+tell me about your family,created,tell me about your family
+who is your family?,created,who is your family?
+who are your family?,created,who are your family?
+where are you from?,created,where are you from?
+Who invented you?,created,Who invented you?
+Who is your father?,created,Who is your father?
+Who's your father?,created,Who's your father?
+do you have a family?,created,do you have a family?
+who created you?,created,who created you?
+how much is twenty rupees in american dollars,currency_converter_with_amount,how much is twenty [rupees](from_curr) in [american dollars](to_curr)
+how much usd is 10 euro,currency_converter_with_amount,how much [usd](from_curr) is 10 [euro](to_curr)
+value of 100 dollars in pound sterling,currency_converter_with_amount,value of 100 [dollars](from_curr) in [pound sterling](to_curr)
+convert 10 yen to indian rupee,currency_converter_with_amount,convert 10 [yen](from_curr) to [indian rupee](to_curr)
+how much is the cost of 25 australian dollar in canadian dollar,currency_converter_with_amount,how much is the cost of 25 [australian dollar](from_curr) in [canadian dollar](to_curr)
+3000 in aed to inr,currency_converter_with_amount,3000 in [aed](from_curr) to [inr](to_curr)
+4 million usd to inr,currency_converter_with_amount,4 million [usd](from_curr) to [inr](to_curr)
+2 billion us dollar to pound sterling,currency_converter_with_amount,2 billion [us dollar](from_curr) to [pound sterling](to_curr)
+how much is 121.4393249 rupees in american dollars,currency_converter_with_amount,how much is 121.4393249 [rupees](from_curr) in [american dollars](to_curr)
+how much usd is forty five euro,currency_converter_with_amount,how much [usd](from_curr) is forty five [euro](to_curr)
+value of 1 million dollars in pound sterling,currency_converter_with_amount,value of 1 million [dollars](from_curr) in [pound sterling](to_curr)
+convert 312.9321 yen to indian rupee,currency_converter_with_amount,convert 312.9321 [yen](from_curr) to [indian rupee](to_curr)
+how much is the cost of 25.388 australian dollar in canadian dollar,currency_converter_with_amount,how much is the cost of 25.388 [australian dollar](from_curr) in [canadian dollar](to_curr)
+pound sterling to inr,currency_converter_with_amount,[pound sterling](from_curr) to [inr](to_curr)
+32130 in aed to inr,currency_converter_with_amount,32130 in [aed](from_curr) to [inr](to_curr)
+4 million yen to inr,currency_converter_with_amount,4 million [yen](from_curr) to [inr](to_curr)
+4 million in canadian dollar to usd,currency_converter_with_amount,4 million in [canadian dollar](from_curr) to [usd](to_curr)
+what is twenty us dollars in indian rupees?,currency_converter_with_amount,what is twenty [us dollars](from_curr) in [indian rupees](to_curr)?
+convert one hundred and ninety nine inr into eur,currency_converter_with_amount,convert one hundred and ninety nine [inr](from_curr) into [eur](to_curr)
+convert 2.2321930 usd to eur,currency_converter_with_amount,convert 2.2321930 [usd](from_curr) to [eur](to_curr)
+convert 2000 inr into usd,currency_converter_with_amount,convert 2000 [inr](from_curr) into [usd](to_curr)
+convert 10 usd to eur,currency_converter_with_amount,convert 10 [usd](from_curr) to [eur](to_curr)
+convert 20 eur to inr,currency_converter_with_amount,convert 20 [eur](from_curr) to [inr](to_curr)
+how much is 20 usd into cad,currency_converter_with_amount,how much is 20 [usd](from_curr) into [cad](to_curr)
+how much is 4000 cad in inr,currency_converter_with_amount,how much is 4000 [cad](from_curr) in [inr](to_curr)
+20 inr in usd,currency_converter_with_amount,20 [inr](from_curr) in [usd](to_curr)
+1 eur in inr,currency_converter_with_amount,1 [eur](from_curr) in [inr](to_curr)
+20.320 inr in usd,currency_converter_with_amount,20.320 [inr](from_curr) in [usd](to_curr)
+1.3329 eur in inr,currency_converter_with_amount, 1.3329 [eur](from_curr) in [inr](to_curr)
+20 inr to usd,currency_converter_with_amount,20 [inr](from_curr) to [usd](to_curr)
+1.21 eur to inr,currency_converter_with_amount,1.21 [eur](from_curr) to [inr](to_curr)
+20 inr into usd,currency_converter_with_amount,20 [inr](from_curr) into [usd](to_curr)
+one eur into inr,currency_converter_with_amount,one [eur](from_curr) into [inr](to_curr)
+45335.7786 usd to inr,currency_converter_with_amount,45335.7786 [usd](from_curr) to [inr](to_curr)
+how much is 65 usd in inr,currency_converter_with_amount,how much is 65 [usd](from_curr) in [inr](to_curr)
+convert 213 inr to usd,currency_converter_with_amount,convert 213 [inr](from_curr) to [usd](to_curr)
+7000 inr to usd,currency_converter_with_amount,7000 [inr](from_curr) to [usd](to_curr)
+131239812301 eur to usd,currency_converter_with_amount,131239812301 [eur](from_curr) to [usd](to_curr)
+inr to usd,currency_converter_with_amount,[inr](from_curr) to [usd](to_curr)
+gbp to usd,currency_converter_with_amount,[gbp](from_curr) to [usd](to_curr)
+usd rate for inr,currency_value,[usd](from_curr) rate for [inr](to_curr)
+exchange rate between eur and usd,currency_value,exchange rate between [eur](from_curr) and [usd](to_curr)
+exchange rate difference between cad and inr,currency_value,exchange rate difference between [cad](from_curr) and [inr](to_curr)
+pound rate for inr,currency_value,[pound](from_curr) rate for [inr](to_curr)
+exchange rate between eur and cad,currency_value,exchange rate between [eur](from_curr) and [cad](to_curr)
+exchange rate difference between cad and yen,currency_value,exchange rate difference between [cad](from_curr) and [yen](to_curr)
+usd rate for afn,currency_value,[usd](from_curr) rate for [afn](to_curr)
+difference between UAE Dirham and eur,currency_value,difference between [UAE Dirham](from_curr) and [eur](to_curr)
+difference between gbp and eur,currency_value,difference between [gbp](from_curr) and [eur](to_curr)
+exchange rate between aud and usd,currency_value,exchange rate between [aud](from_curr) and [usd](to_curr)
+difference in currency rate between australian dollar and AED,currency_value,difference in currency rate between [australian dollar](from_curr) and [AED](to_curr)
+exchange rate difference between aud and inr,currency_value,exchange rate difference between [aud](from_curr) and [inr](to_curr)
+jpy rate for inr,currency_value,[jpy](from_curr) rate for [inr](to_curr)
+exchange rate between afn and usd,currency_value,exchange rate between [afn](from_curr) and [usd](to_curr)
+exchange rate difference between Yen and inr,currency_value,exchange rate difference between [Yen](from_curr) and [inr](to_curr)
+exchange rate for euro,currency_value,exchange rate for [euro](to_curr)
+exchange rate of euro?,currency_value,exchange rate of [euro](to_curr)?
+exchange rate between usd and euro,currency_value,exchange rate between [usd](from_curr) and [euro](to_curr)
+rate of gbp to indian rupee,currency_value,rate of [gbp](from_curr) to [indian rupee](to_curr)
+no,deny,no
+never,deny,never
+I don't think so,deny,I don't think so
+don't like that,deny,don't like that
+no way,deny,no way
+not really,deny,not really
+Inappropriate,deny,Inappropriate
+not right,deny,not right
+doesnt seem correct,deny,doesnt seem correct
+incorrect,deny,incorrect
+Are you a girl or boy?,gender,Are you a girl or boy?
+Are you male or female?,gender,Are you male or female?
+What is your gender?,gender,What is your gender?
+gender?,gender,gender?
+male or female?,gender,male or female?
+what gender do you belong?,gender,what gender do you belong?
+bye,goodbye,bye
+goodbye,goodbye,goodbye
+see you around,goodbye,see you around
+see you later,goodbye,see you later
+goodbye,goodbye,goodbye
+hey,greet,hey
+hello,greet,hello
+hi,greet,hi
+good morning,greet,good morning
+good evening,greet,good evening
+"hey, there!",greet,"hey, there!"
+hey there!,greet,hey there!
+"hey, There!",greet,"hey, There!"
+hey,greet,hey
+meeting title would be business plan,inform,meeting title would be [business plan](title)
+title is project review,inform,title is [project review](title)
+scrum meeting,inform,[scrum meeting](title)
+strategy plan,inform,[strategy plan](title)
+exactly at 10:00,inform,exactly at [10:00](time)
+by tomorrow,inform,by [tomorrow](day_time)
+at 1:20pm,inform,at [1:20pm](time)
+mostly like 4:30pm,inform,mostly like [4:30pm](time)
+for every week,inform,for [every week](day_time)
+mostly on monday,inform,mostly on [monday](day_time)
+will be on coming thursday,inform,will be on coming [thursday](day_time)
+title would be scrum,inform,title would be [scrum](title)
+by tomorrow,inform,by [tomorrow](day_time)
+by 10:00am,inform,by [10:00am](time)
+by 10:00,inform,by [10:00](time)
+by 11:00 am,inform,by [11:00 am](time)
+business plan,inform,[business plan](title)
+business plan,inform,[business plan](title)
+exactly by 9:15 am,inform,exactly by [9:15 am](day_time)
+can you tell me a joke,joke,can you tell me a joke
+tell me something funny,joke,tell me something funny
+tell me a joke,joke,tell me a joke
+"Hey, tell me a joke",joke,"Hey, tell me a joke"
+I want you to act funny,joke,I want you to act funny
+Are you humorous?,joke,Are you humorous?
+Can you make me laugh?,joke,Can you make me laugh?
+Do you know to be humorous?,joke,Do you know to be humorous?
+Are you known for your humorous nature?,joke,Are you known for your humorous nature?
+I'm unhappy,joke,I'm unhappy
+tell me a joke,joke,tell me a joke
+tell me a joke,joke,tell me a joke
+What is 5 + 5,math,What is 5 + 5
+"Combine 10, 112, 134 and 126",math,"Combine 10, 112, 134 and 126"
+Add 1234 and 4567,math,Add 1234 and 4567
+What is 67 increased by 56,math,What is 67 increased by 56
+123 plus 456,math,123 plus 456
+Join 5 and 6,math,Join 5 and 6
+5+6,math,5+6
+Take away 5 from 69,math,Take away 5 from 69
+reduce 678 from 9820,math,reduce 678 from 9820
+9 minus 4,math,9 minus 4
+9 subtracted by 4,math,9 subtracted by 4
+subtract 9 by 4,math,subtract 9 by 4
+What is the difference of 190 and 56,math,What is the difference of 190 and 56
+Take away 67 from 190,math,Take away 67 from 190
+deduct 45 from 190,math,deduct 45 from 190
+decrease 45 by 9,math,decrease 45 by 9
+9-3,math,9-3
+Multiply 4 by 5,math,Multiply 4 by 5
+What is 4 times 5,math,What is 4 times 5
+4 times 5,math,4 times 5
+68 by 217,math,68 by 217
+4*5,math,4*5
+double 4*5,math,double 4*5
+4 into 5,math,4 into 5
+triple 4 into 5,math,triple 4 into 5
+Double the product of 45 and 67,math,Double the product of 45 and 67
+product of 3 and 5,math,product of 3 and 5
+What is tripled result of 67,math,What is tripled result of 67
+What is the quotient of 56 and 89,math,What is the quotient of 56 and 89
+equal parts of 60,math,equal parts of 60
+What is half of 165,math,What is half of 165
+what is 56 divided by 6,math,what is 56 divided by 6
+56/5,math,56/5
+How many 10s in 1450?,math,How many 10s in 1450?
+Split 56 by 5,math,Split 56 by 5
+equal parts of 60,math,equal parts of 60
+What are the factors of 56,math,What are the factors of 56
+factors of 3,math,factors of 3
+What is the remainder of 56/4,math,What is the remainder of 56/4
+What is the quotient of 56 and 89,math,What is the quotient of 56 and 89
+What is the dividend of 2 and 7,math,What is the dividend of 2 and 7
+perfect,mood_great,perfect
+very good,mood_great,very good
+great,mood_great,great
+amazing,mood_great,amazing
+wonderful,mood_great,wonderful
+I am feeling very good,mood_great,I am feeling very good
+I am great,mood_great,I am great
+great,mood_great,great
+fine,mood_great,fine
+i'm fine,mood_great,i'm fine
+i am fine,mood_great,i am fine
+good,mood_great,good
+I'm good,mood_great,I'm good
+I am feeling low,mood_great,I am feeling low
+fine,mood_great,fine
+fine,mood_great,fine
+i'm alright,mood_great,i'm alright
+alright,mood_great,alright
+fine,mood_great,fine
+fine,mood_great,fine
+I am fine,mood_great,I am fine
+fine,mood_great,fine
+sad,mood_unhappy,sad
+very sad,mood_unhappy,very sad
+unhappy,mood_unhappy,unhappy
+bad,mood_unhappy,bad
+very bad,mood_unhappy,very bad
+awful,mood_unhappy,awful
+terrible,mood_unhappy,terrible
+not very good,mood_unhappy,not very good
+extremely sad,mood_unhappy,extremely sad
+so sad,mood_unhappy,so sad
+tell me a joke,mood_unhappy,tell me a joke
+i'm sad,mood_unhappy,i'm sad
+i'm unhappy,mood_unhappy,i'm unhappy
+very sad,mood_unhappy,very sad
+low,mood_unhappy,low
+i'm low,mood_unhappy,i'm low
+very low,mood_unhappy,very low
+totally low,mood_unhappy,totally low
+i'm very low,mood_unhappy,i'm very low
+show my events for today,show_event,show my events for today
+list out my events for tomorrow,show_event,list out my events for tomorrow
+my events for wednesday,show_event,my events for wednesday
+my events for this year,show_event,my events for this year
+show my events for this week,show_event,show my events for this week
+what are my events for next 3 days,show_event,what are my events for next 3 days
+my events for this month,show_event,my events for this month
+show my events for today,show_event,show my events for today
+show my events for today,show_event,show my events for today
+/stop,stop,/stop
+/stop,stop,/stop
+cancel it,stop_create_event,cancel it
+i want to cancel the meeting,stop_create_event,i want to cancel the meeting
+I want to cancel it,stop_create_event,I want to cancel it
+Please cancel the event,stop_create_event,Please cancel the event
+please cancel the meeting,stop_create_event,please cancel the meeting
+please cancel it,stop_create_event,please cancel it
+I don't want to proceed with this event,stop_create_event,I don't want to proceed with this event
+ok then you cant help me,stop_create_event,ok then you cant help me
+"that was shit, you're not helping",stop_create_event,"that was shit, you're not helping"
+you can't help me,stop_create_event,you can't help me
+you can't help me with what i need,stop_create_event,you can't help me with what i need
+i guess you can't help me then,stop_create_event,i guess you can't help me then
+ok i guess you can't help me,stop_create_event,ok i guess you can't help me
+that's not what i want,stop_create_event,that's not what i want
+"ok, but that doesnt help me",stop_create_event,"ok, but that doesnt help me"
+this is leading to nothing,stop_create_event,this is leading to nothing
+this conversation is not really helpful,stop_create_event,this conversation is not really helpful
+you cannot help me with what I want,stop_create_event,you cannot help me with what I want
+I think you cant help me,stop_create_event,I think you cant help me
+hm i don't think you can do what i want,stop_create_event,hm i don't think you can do what i want
+stop,stop_create_event,stop
+stop go back,stop_create_event,stop go back
+do you get anything?,stop_create_event,do you get anything?
+and you call yourself bot company? pff,stop_create_event,and you call yourself bot company? pff
+and that's it?,stop_create_event,and that's it?
+nothing else?,stop_create_event,nothing else?
+thanks!,thank,thanks!
+thank you,thank,thank you
+thank you for the help,thank,thank you for the help
+thanks for the help,thank,thanks for the help
+thanks for your help,thank,thanks for your help
+"It was helpful, thanks!",thank,"It was helpful, thanks!"
+thanks,thank,thanks
+you were helpful.,thank,you were helpful.
+"that was helpful, thanks!",thank,"that was helpful, thanks!"
+thanks. that was helpful by the way!!,thank,thanks. that was helpful by the way!!
+ok thanks,thank,ok thanks
+thanks,thank,thanks
+exactly by 9:55am,thank,exactly by 9:55am
+talk in male voice,voice,talk in male voice
+speak in male voice,voice,speak in male voice
+change voice,voice,change voice
+can you talk in male voice,voice,can you talk in male voice
+talk in female voice,voice,talk in female voice
+what is your other voice,voice,what is your other voice
+what is your voice,voice,what is your voice
+what are the voices you can speak?,voice,what are the voices you can speak?
+Do you have a male voice?,voice,Do you have a male voice?
+Do you have a female voice?,voice,Do you have a female voice?
+voice,voice,voice
+what is the weather at chennai today?,weather,what is the weather at [chennai](location) [today](day_time)?
+will it rain at poland,weather,will it rain at [poland](location)
+Is there a possibility to rain at madras in Tuesday?,weather,Is there a possibility to rain at [madras](location) in [Tuesday](day_time)?
+what is the weather at india?,weather,what is the weather at [india](location)?
+Tell me the weather in chennai for next 5 days,weather,Tell me the weather in [chennai](location) for [next 5 days](day_time)
+weather in chennai on Wednesday,weather,weather in [chennai(location) on [Wednesday](day_time)
+weather at mumbai?,weather,weather at [mumbai](location)?
+tell me the weather at bangalore this wednesday.,weather,tell me the weather at [bangalore](location) [this wednesday](day_time).
+how is the weather at trichy?,weather,how is the weather at [trichy](location)?
+weather at pune on Monday?,weather,weather at [pune] on [Monday](location)?
+what is the weather at hydrebad?,weather,what is the weather at [hydrebad](location)?
+what is the weather in mumbai?,weather,what is the weather in [mumbai](location)?
+will it rain at germany,weather,will it rain at [germany](location)
+Is there a possibility to rain at delhi tomorrow,weather,Is there a possibility to rain at [delhi](location) [tomorrow](day_time)
+what is the weather at west bengal?,weather,what is the weather at [west bengal](location)?
+weather at kolkata?,weather,weather at [kolkata](location)?
+tell me the weather at chennai in monday.,weather,tell me the weather at [chennai](location) in [monday](day_time).
+how is the weather at trichy?,weather,how is the weather at [trichy](location)?
+weather at goa?,weather,weather at [goa](location)?
+Will it rain tomorrow morning at alabama?,weather,Will it rain tomorrow morning at [alabama](location)?
+weather at Kannur for next 3 days?,weather,weather at [Kannur] for [next 3 days](location)?
+tell me about the weather in boston tomorrow,weather,tell me about the weather in [boston](location) [tomorrow](day_time)
+weather in kannur?,weather,weather in [kannur](location)?
+what is the weather at Pakistan?,weather,what is the weather at [Pakistan](location)?
+what is the temperature at kolathur,weather,what is the temperature at [kolathur](location)
+humidity at nungambakkam for next 2 days,weather,humidity at [nungambakkam](location) for [next 2 days](day_time)
+what is weather kolathur,weather,what is weather [kolathur](location)
+weather at delhi?,weather,weather at [delhi](location)?
+weather at chennai for next Thrusday,weather,weather at [chennai](location) for [next Thrusday](day_time)
+weather at chennai in coming Friday?,weather,weather at [chennai](location) in [coming Friday](day_time)?
+weather at kerala?,weather,weather at [kerala](location)?
+What is the weather in Kannur?,weather,What is the weather in [Kannur](location)?
+tell me about the weather at boston,weather,tell me about the weather at [boston](location)
+what's the weather in pollachi?,weather,what's the weather in [pollachi](location)?
+weather at chennai?,weather,weather at [chennai](location)?
+what’s the weather in Chennai tomorrow??,weather,what’s the weather in [Chennai](location) [tomorrow](day_time)??
+what’s the weather now in perambur??,weather,what’s the weather now in [perambur](location)??
+what will be the weather in Chennai on Thursday??,weather,what will be the weather in [Chennai](location) on [Thursday](day_time)??
+What's the weather in pondicherry this day_time??,weather,What's the weather in [pondicherry](location) this [day_time](day_time)??
+Is it snowing in Kashmir today??,weather,Is it snowing in [Kashmir](location) [today](day_time)??
+Is it going to rain in kerala tonight?,weather,Is it going to rain in [kerala](location) [tonight](day_time)?
+Is there any history of snowfall in chennai?,weather,Is there any history of snowfall in [chennai](location)?
+Do I need an umbrella today??,weather,Do I need an umbrella [today](day_time)??
+Do I need a Jacket for my Bangalore trip day after tomorrow??,weather,Do I need a Jacket for my [Bangalore](location) trip [day after tomorrow](day_time)??
+Tell me about the weather for my pin location??,weather,Tell me about the weather for my [pin location](location)??
+Cities with high temperature today??,weather,Cities with high temperature [today](day_time)??
+Delhi temperature this Friday??,weather,[Delhi] temperature this [Friday](day_time)??
+Temperature here now?,weather,Temperature here now?
+Current weather??,weather,Current weather??
+What is the season called in chennai now?,weather,What is the season called in [chennai](location) now?
+Is there any chance of tornadoes at america this sunday?,weather,Is there any chance of tornadoes at [america](location) this [sunday](day_time)?
+Which day of this week will be the warmest in chennai?,weather,Which day of this week will be the warmest in [chennai](location)?
+Will chennai receives rain with thunderstorm day after tomorrow?,weather,Will [chennai] receives rain with thunderstorm [day after tomorrow](day_time)?
+Do any precipitation expected in kerala this month?,weather,Do any precipitation expected in [kerala](location) [this month](day_time)?
+Chennai forecast?,weather,[Chennai](location) forecast?
+what is weather at chennai,weather,what is weather at [chennai](location)
+Delhi temperature this Friday,weather,[Delhi](location) temperature this [Friday](day_time)
+Delhi temperature this Friday,weather,[Delhi](location) temperature [this Friday](day_time)
+will it rain in trichy today?,weather,will it rain in [trichy](location) [today](day_time)?
+do i need an umbrella today?,weather,do i need an umbrella [today](day_time)?
+do i need umbrella tomorrow?,weather,do i need umbrella [tomorrow](day_time)?
+weather at egmore in monday,weather,weather at [egmore](location) in [monday](day_time)
+tell me about the weather at mumbai on sunday,weather,tell me about the weather at [mumbai](location) on [sunday](day_time)
+what will be the weather,weather,what will be the weather
+weather at chennai for next 3 days,weather,weather at [chennai](location) for [next 3 days](day_time)
+weather at chennai tomorrow,weather,weather at [chennai](location) [tomorrow](day_time)
+weather at chennai today,weather,weather at [chennai](location) [today](day_time)
+weather at chennai today,weather,weather at [chennai](location) [today](day_time)
+what's the weather at chennai for next 2 days,weather,what's the weather at [chennai](location) for [next 2 days](day_time)
+what is bootstrap?,wiki_what,what is bootstrap?
+what is a blog?,wiki_what,what is a blog?
+what is a black hole?,wiki_what,what is a black hole?
+what is bpo?,wiki_what,what is bpo?
+what is biodiversity?,wiki_what,what is biodiversity?
+what is banking?,wiki_what,what is banking?
+what is bitcoin?,wiki_what,what is bitcoin?
+what is blockchain?,wiki_what,what is blockchain?
+what is big data?,wiki_what,what is big data?
+what is an adjective?,wiki_what,what is an adjective?
+what is an api?,wiki_what,what is an api?
+what is an artificial intelligence?,wiki_what,what is an artificial intelligence?
+what is a syllable?,wiki_what,what is a syllable?
+what is a noun?,wiki_what,what is a noun?
+what is vowels?,wiki_what,what is vowels?
+what is consonants?,wiki_what,what is consonants?
+What is an universe?,wiki_what,What is an universe?
+what is an asteroid?,wiki_what,what is an asteroid?
+what is an article?,wiki_what,what is an article?
+what is an algorithm?,wiki_what,what is an algorithm?
+what is an atom?,wiki_what,what is an atom?
+what is an abstract noun?,wiki_what,what is an abstract noun?
+what is a botanical name of plants?,wiki_what,what is a botanical name of plants?
+what is a balanced diet?,wiki_what,what is a balanced diet?
+what is a battery?,wiki_what,what is a battery?
+what is a bill?,wiki_what,what is a bill?
+what is a computer?,wiki_what,what is a computer?
+what is a cell?,wiki_what,what is a cell?
+what is a constitution?,wiki_what,what is a constitution?
+what is a composite number?,wiki_what,what is a composite number?
+what is a class in java?,wiki_what,what is a class in java?
+what is a class?,wiki_what,what is a class?
+what is a clause?,wiki_what,what is a clause?
+what is a cover letter?,wiki_what,what is a cover letter?
+what is a compound?,wiki_what,what is a compound?
+what is a constructor in java?,wiki_what,what is a constructor in java?
+what is chemotaxonomy?,wiki_what,what is chemotaxonomy?
+what is cbc test?,wiki_what,what is cbc test?
+what is cryptocurrency?,wiki_what,what is cryptocurrency?
+what is cloud computing?,wiki_what,what is cloud computing?
+what is cv?,wiki_what,what is cv?
+what is communication?,wiki_what,what is communication?
+what is current?,wiki_what,what is current?
+what is C?,wiki_what,what is C?
+what is known as  net growth,wiki_what,what is known as  net growth
+what is known as bootstrap,wiki_what,what is known as bootstrap
+what is net growth,wiki_what,what is net growth
+what is bitcoin,wiki_what,what is bitcoin
+what is crypto currency,wiki_what,what is crypto currency
+what is fixed assests,wiki_what,what is fixed assests
+what is profit,wiki_what,what is profit
+Define current?,wiki_what,Define current?
+Explain balanced diet?,wiki_what,Explain balanced diet?
+Explain battery?,wiki_what,Explain battery?
+Explain bill?,wiki_what,Explain bill?
+Explain computer?,wiki_what,Explain computer?
+Explain cell?,wiki_what,Explain cell?
+Explain constitution?,wiki_what,Explain constitution?
+Explain composite number?,wiki_what,Explain composite number?
+Explain class in java?,wiki_what,Explain class in java?
+Explain class?,wiki_what,Explain class?
+Explain clause?,wiki_what,Explain clause?
+Explain cover letter?,wiki_what,Explain cover letter?
+Explain compound?,wiki_what,Explain compound?
+Explain constructor in java?,wiki_what,Explain constructor in java?
+Explain chemotaxonomy?,wiki_what,Explain chemotaxonomy?
+When is Diwali?,wiki_when,When is Diwali?
+When can the president declare a state of emergency?,wiki_when,When can the president declare a state of emergency?
+When did french revolution occur?,wiki_when,When did french revolution occur?
+When was amazon founded?,wiki_when,When was amazon founded?
+When was the kargil war?,wiki_when,When was the kargil war?
+When was the battle of plassey fought?,wiki_when,When was the battle of plassey fought?
+When was the first email sent?,wiki_when,When was the first email sent?
+When was the chandraayan 2 launched?,wiki_when,When was the chandraayan 2 launched?
+When was the first computer invented?,wiki_when,When was the first computer invented?
+When was the constituition of India adopted?,wiki_when,When was the constituition of India adopted?
+When was the first world war?,wiki_when,When was the first world war?
+When is the olympics?,wiki_when,When is the olympics?
+When is the lunar eclipse?,wiki_when,When is the lunar eclipse?
+When are the peaches ready in Georgia?,wiki_when,When are the peaches ready in Georgia?
+When are the mets playing?,wiki_when,When are the mets playing?
+When are the next us elections?,wiki_when,When are the next us elections?
+When do we take insulin?,wiki_when,When do we take insulin?
+When do we take lcm?,wiki_when,When do we take lcm?
+When are magentic tapes used?,wiki_when,When are magentic tapes used?
+When are elections in Delhi?,wiki_when,When are elections in Delhi?
+When is the world cup final?,wiki_when,When is the world cup final?
+When is friendship day in 2020?,wiki_when,When is friendship day in 2020?
+When is the next cricket match for India?,wiki_when,When is the next cricket match for India?
+When is the next solar eclipse?,wiki_when,When is the next solar eclipse?
+When is the birthday of google?,wiki_when,When is the birthday of google?
+When is mother's day?,wiki_when,When is mother's day?
+when is India's Independence day,wiki_when,when is India's Independence day
+when is diwali,wiki_when,when is diwali
+Which is the most beautiful state in India?,wiki_which,Which is the most beautiful state in India?
+Which is the most reactive metal?,wiki_which,Which is the most reactive metal?
+Which is the most poisonous snake in the world?,wiki_which,Which is the most poisonous snake in the world?
+Which is the most expensive car ?,wiki_which,Which is the most expensive car ?
+Which is the most spoken language in the world?,wiki_which,Which is the most spoken language in the world?
+Which is the highest waterfall in the world?,wiki_which,Which is the highest waterfall in the world?
+Which is the highest peak in the world?,wiki_which,Which is the highest peak in the world?
+Which is the highest civilian award in India?,wiki_which,Which is the highest civilian award in India?
+Which is the best tourist place in India?,wiki_which,Which is the best tourist place in India?
+Which is the highest mountain in the world?,wiki_which,Which is the highest mountain in the world?
+Which is the longest river in India?,wiki_which,Which is the longest river in India?
+Which is smallest state in india?,wiki_which,Which is smallest state in india?
+Which is the longest river in the world?,wiki_which,Which is the longest river in the world?
+Which is the smallest country in the world?,wiki_which,Which is the smallest country in the world?
+Which is the oldest language?,wiki_which,Which is the oldest language?
+Which is the best mobile phone?,wiki_which,Which is the best mobile phone?
+which is the largest ocean in India,wiki_which,which is the largest ocean in India
+who is Indian Prime Minister,wiki_who,who is Indian Prime Minister
+who is Indian President,wiki_who,who is Indian President
+who is Narendra Modi,wiki_who,who is Narendra Modi
+who is Barack Obama,wiki_who,who is Barack Obama
+who is Nelson Mandela,wiki_who,who is Nelson Mandela
+who is Donald Trump,wiki_who,who is Donald Trump
+who is Michelle Obama,wiki_who,who is Michelle Obama
+who is MS Dhoni,wiki_who,who is MS Dhoni
+who is Lionel Messi,wiki_who,who is Lionel Messi
+who is Cristiano Ronaldo,wiki_who,who is Cristiano Ronaldo
+who is Manmohan Singh,wiki_who,who is Manmohan Singh
+who is United Nations President,wiki_who,who is United Nations President
+who is Graham Bell,wiki_who,who is Graham Bell
+Elon Musk,wiki_who,Elon Musk
+Alan Turing,wiki_who,Alan Turing
+Ross Quillian,wiki_who,Ross Quillian
+Marvin Minsky,wiki_who,Marvin Minsky
+Nikola Tesla,wiki_who,Nikola Tesla
+Michael Jackson,wiki_who,Michael Jackson
+Galileo Galilei,wiki_who,Galileo Galilei
+Martin Luther King,wiki_who,Martin Luther King
+Queen Elizabeth II,wiki_who,Queen Elizabeth II
+Bill Gates,wiki_who,Bill Gates
+Charles Darwin,wiki_who,Charles Darwin
+create a workspace,create_workspace,create a workspace
+I want to create a workspace,create_workspace,I want to create a workspace
+"Please, create a workspace",create_workspace,"Please, create a workspace"
+new workspace,create_workspace,new workspace
+create workspace,create_workspace,create workspace
+create a project,create_project,create a project
+I want to create a project,create_project,I want to create a project
+"Please, create a project",create_project,"Please, create a project"
+new project,create_project,new project
+create project,create_project,create project
+create a new project inside workspace1,create_project,create a new project inside workspace1
+create a project under this workspace,create_project,create a project under this workspace
+Import dataset,import_dataset,Import dataset
+load dataset,import_dataset,load dataset
+i want to import a dataset,import_dataset,i want to import a dataset
+i would like to import a dataset,import_dataset,i would like to import a dataset
+Please help me to import a dataset,import_dataset,Please help me to import a dataset
+add dataset,import_dataset,add dataset
+please help me to add dataset,import_dataset,please help me to add dataset
+i want to add a dataset,import_dataset,i want to add a dataset
+i want to use a dataset from my workspace,import_dataset,i want to use a dataset from my workspace
+please import the sales dataset from my workspace ,import_dataset,please import the sales dataset from my workspace 
+send the value drivers charts to arun and ashwin for reference,share_report,send the value drivers charts to arun and ashwin for reference
+share this chart to pooja,share_report,share this chart to pooja
+"forward this as a report to madu, arun and ashwin",share_report,"forward this as a report to madu, arun and ashwin"
+send anomaly chart to bhavani and ishwarya,share_report,send anomaly chart to bhavani and ishwarya
+send this to kavi,share_report,send this to kavi
+what drives profit?,deepinsights,what drives profit?
+what are the infuencing factors for total cost,deepinsights,what are the infuencing factors for total cost
+influencers for profit,deepinsights,influencers for profit
+what influences profit,deepinsights,what influencers for profit
+driving factors for sales,deepinsights,driving factors for sales
+what drives sales,deepinsights,what drives sales
+factors for increase in sales,deepinsights,factors for increase in sales
+factors for decrease in sales,deepinsights,factors for decrease in sales
+factors for increase in profit,deepinsights,factors for increase in profit
+factors for decrease in profit,deepinsights,factors for decrease in profit
+display sales chart,show_chart,display [sales](chart_name) chart
+show me comparison rate kpi,show_kpi,show me [comparison rate](kpi_name) kpi
