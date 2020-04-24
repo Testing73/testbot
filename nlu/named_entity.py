@@ -4,6 +4,7 @@ import pandas as pd
 from pickle import load, dump
 import nltk
 nltk.download('punkt')
+nltk.download('averaged_perceptron_tagger')
 dff = pd.read_csv("emp_details.csv")
 m_df = pd.read_csv("sales db.csv")
 cdf = pd.DataFrame({'column' : m_df.columns})
