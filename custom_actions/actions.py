@@ -157,8 +157,8 @@ class ActionWeatherResponse(Action):
 
     def run(self, tracker):
         # print(tracker.dummy_tracker)
-        loc_entity = ''
-        date_entity = ''
+        loc_entity = None
+        date_entity = None
         intent = tracker.dummy_tracker["latest_message"]["intent"]
         for each_entity in range(len(tracker.dummy_tracker['latest_message']['entities'])):
             if 'location' in list(tracker.dummy_tracker['latest_message']['entities'][each_entity].keys()):
@@ -320,91 +320,98 @@ class ActionCurrencyConverter(Action):
 "PKR":  ["PKR", "pakistan rupee", "pakistani rupee", "pak rupee", "pkr", "pakistani currency","pakistan currency", "pak currency", "PKD"],
 "Yuan": ["Yuan", "Chinese yuan", "yuan renminbi", "renminbi", "china renminbi", "chinese yuan renminbi", "china yuan", "chinese currency", "china currency", "cny",  "CNY", "yuan", "cn yuan", "YUAN"],
 }
-        temp = ''; response = ''
-        # from_currency = None; to_currency = None
+        temp = ''; response = ''; flag = 0
+        from_currency = None;to_currency = None
         p = inflect.engine()
         c = CurrencyRates(force_decimal=False)
-        from_currency = tracker.dummy_tracker['latest_message']['entities']
-        to_currency = tracker.dummy_tracker['latest_message']['entities']
+        for each_entity in range(len(tracker.dummy_tracker['latest_message']['entities'])):
+            if 'from_curr' in list(tracker.dummy_tracker['latest_message']['entities'][each_entity].keys()):
+                from_currency = tracker.dummy_tracker['latest_message']['entities'][each_entity]['from_curr'][0]
+            if 'to_curr' in list(tracker.dummy_tracker['latest_message']['entities'][each_entity].keys()):
+                print(tracker.dummy_tracker['latest_message']['entities'][each_entity]['to_curr'][0])
+                to_currency = tracker.dummy_tracker['latest_message']['entities'][each_entity]['to_curr'][0]
+        # from_currency = tracker.dummy_tracker['latest_message']['entities']
+        # to_currency = tracker.dummy_tracker['latest_message']['entities']
         for keys in list(currency_list_dict.keys()):
             if from_currency is None or to_currency is None:
-                response = "Couldn't find the currency codes"
-            else:
-                if from_currency in currency_list_dict[keys]:
-                    from_currency = keys
-                elif to_currency in currency_list_dict[keys]:
-                    to_currency = keys
+                flag = 1
 
-        # if from_currency is not None:
-        #     from_currency = from_currency.upper()
-        # if to_currency is not None:
-        #     to_currency = to_currency.upper()
-        print(tracker.dummy_tracker["latest_message"]["text"])
-        amount = find_amount(tracker.dummy_tracker["latest_message"]["text"])
-        print(amount, 'Amount')
-        if amount is not None and amount != " " and amount != "":
-            print(amount, 0)
-            amount = amount.lower().rstrip(' ').split(' ')
-            print(amount, 'After Split')
-            if len(amount) == 1:
-                if 'k' in amount[0]:
-                    amount = int(amount[0].rstrip("k"))
-                    amount = amount * 1000
-                    print(amount, 1)
-                else:
-                    amount = amount[0]
-                    print(amount, 'Simple Integer')
-                print(type(amount), 10)
-            else:
-                for i in range(len(amount)):
-                    amount[i] = amount[i].lower()
-                    if re.match("\d.*k", amount[i], re.IGNORECASE):
-                        amount[i] = amount[i].replace("k", "")
-                        amount[i] = (int(amount[i])) * 1000
-                        amount[i] = p.number_to_words(amount[i])
-                    elif re.match("\d.*", amount[i], re.IGNORECASE):
-                        if amount[i + 1] == 'k':
-                            amount[i] = (int(amount[i])) * 1000
-                            amount[i] = p.number_to_words(amount[i])
+            if from_currency in currency_list_dict[keys]:
+                from_currency = keys
+            elif to_currency in currency_list_dict[keys]:
+                to_currency = keys
+
+        if flag == 1 and tracker.dummy_tracker["latest_message"]["intent"] != 'check_currency_value':
+            response = "Couldn't find the currency codes"
+        else:
+            if tracker.dummy_tracker["latest_message"]["intent"] == 'currency_converter_with_amount':
+                print(from_currency, to_currency, 'here')
+                print(tracker.dummy_tracker["latest_message"]["text"])
+                amount = find_amount(tracker.dummy_tracker["latest_message"]["text"])
+                print(amount, 'Amount')
+                if amount is not None and amount != " " and amount != "":
+                    print(amount, 0)
+                    amount = amount.lower().rstrip(' ').split(' ')
+                    print(amount, 'After Split')
+                    if len(amount) == 1:
+                        if 'k' in amount[0]:
+                            amount = int(amount[0].rstrip("k"))
+                            amount = amount * 1000
+                            print(amount, 1)
                         else:
-                            amount[i] = p.number_to_words(amount[i])
-                    temp = temp + ' ' + amount[i]
-                amount = temp
-            print(amount, "here")
-            try:
-                amount = w2n.word_to_num(amount)
-                print(amount)
-                amount = float(amount)
+                            amount = amount[0]
+                            print(amount, 'Simple Integer')
+                        print(type(amount), 10)
+                    else:
+                        for i in range(len(amount)):
+                            amount[i] = amount[i].lower()
+                            if re.match("\d.*k", amount[i], re.IGNORECASE):
+                                amount[i] = amount[i].replace("k", "")
+                                amount[i] = (int(amount[i])) * 1000
+                                amount[i] = p.number_to_words(amount[i])
+                            elif re.match("\d.*", amount[i], re.IGNORECASE):
+                                if amount[i + 1] == 'k':
+                                    amount[i] = (int(amount[i])) * 1000
+                                    amount[i] = p.number_to_words(amount[i])
+                                else:
+                                    amount[i] = p.number_to_words(amount[i])
+                            temp = temp + ' ' + amount[i]
+                        amount = temp
+                    print(amount, "here")
+                    try:
+                        amount = w2n.word_to_num(amount)
+                        print(amount)
+                        amount = float(amount)
 
-            except ValueError:
-                amount = float(amount)
+                    except ValueError:
+                        amount = float(amount)
+                if amount is None or amount == "" or amount == " ":
+                    amount = 1.0
+                try:
+                    converted_value = c.get_rate(from_currency, to_currency)
 
-        if tracker.dummy_tracker["latest_message"]["intent"] == 'currency_converter_with_amount':
-            print(from_currency, to_currency, 'here')
-            if amount is None or amount == "" or amount == " ":
-                amount = 1.0
-            try:
+                    response = str(amount) + ' in  ' + from_currency + ' = ' + str(converted_value * amount) + ' ' + to_currency
+                except TypeError:
+                    if from_currency is None:
+                        response = "Sorry, Couldn't get the from currency code."
+                    elif to_currency is None:
+                        response = "Sorry, Couldn't get the to currency code."
+            elif tracker.dummy_tracker["latest_message"]["intent"] == 'currency_value':
                 converted_value = c.get_rate(from_currency, to_currency)
+                response = from_currency + ' rate is ' + str(converted_value) + ' ' + to_currency
 
-                response = str(amount) + ' in  ' + from_currency + ' = ' + str(converted_value * amount) + ' ' + to_currency
-            except TypeError:
-                if from_currency is None:
-                    response = "Sorry, Couldn't get the from currency code."
-                elif to_currency is None:
-                    response = "Sorry, Couldn't get the to currency code."
-        elif tracker.dummy_tracker["latest_message"]["intent"] == 'currency_value':
-            converted_value = c.get_rate(from_currency, to_currency)
-            response = from_currency + ' rate is ' + str(converted_value) + ' ' + to_currency
-
-        elif tracker.dummy_tracker["latest_message"]["intent"] == 'check_currency_value':
-
-            if from_currency is None and to_currency is not None:
-                from_currency = to_currency
-            elif to_currency is None and from_currency is not None:
-                converted_value = c.get_rate(from_currency, 'USD')
-                response = from_currency + ' rate is ' + str(converted_value) + ' USD'
-            elif from_currency is None and to_currency is None:
-                response = "Sorry, I couldn't server you with this :("
+            elif tracker.dummy_tracker["latest_message"]["intent"] == 'check_currency_value':
+                print("YAY!!!!")
+                if to_currency is not None and from_currency is None:
+                    print(to_currency, "###############################")
+                    converted_value = c.get_rate(to_currency, 'USD')
+                    response = from_currency + ' rate is ' + str(converted_value) + ' USD'
+                elif to_currency is None and from_currency is not None:
+                    print(from_currency, "###############################")
+                    converted_value = c.get_rate(from_currency, 'USD')
+                    response = from_currency + ' rate is ' + str(converted_value) + ' USD'
+                elif from_currency is None and to_currency is None:
+                    response = "Sorry, I couldn't server you with this :("
 
         return response
 
