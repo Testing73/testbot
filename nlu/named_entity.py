@@ -92,7 +92,7 @@ def train_entity(data):
 
 def test(user_input):
     entity_list = []; entity_tok = []
-    crf = load(open('entity_extraction.pkl', 'rb'))
+    crf = load(open('nlu/entity_extraction.pkl', 'rb'))
     tokens = nltk.word_tokenize(user_input)
     tag = nltk.pos_tag(tokens)
     # print(tag)
