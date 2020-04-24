@@ -3,7 +3,7 @@ from core.Tracker import Tracker
 from nlu.intent_classification import *
 from nlu.named_entity import *
 from dialog_manager.response_fetcher import *
-from flask import Flask, request
+from flask import Flask, request, jsonify
 app = Flask(__name__)
 
 
@@ -64,7 +64,7 @@ def main():
                 # return v(tracker)
         response["intent"] = intent
         response["entity"] = entities
-    return response
+    return jsonify({"response": response})
 
 
 # if __name__ == '__main__':
