@@ -3,8 +3,8 @@ import sklearn_crfsuite
 import pandas as pd
 from pickle import load, dump
 import nltk
-dff = pd.read_csv("/home/pooja/Downloads/emp_details.csv")
-m_df = pd.read_csv("/home/pooja/Learning_Path/ML/Dataset/sales db.csv")
+dff = pd.read_csv("emp_details.csv")
+m_df = pd.read_csv("sales db.csv")
 cdf = pd.DataFrame({'column' : m_df.columns})
 
 
@@ -92,7 +92,7 @@ def train_entity(data):
 
 def test(user_input):
     entity_list = []; entity_tok = []
-    crf = load(open('/home/pooja/Desktop/prototype/nlu/entity_extraction.pkl', 'rb'))
+    crf = load(open('entity_extraction.pkl', 'rb'))
     tokens = nltk.word_tokenize(user_input)
     tag = nltk.pos_tag(tokens)
     # print(tag)

@@ -3,8 +3,8 @@
 import time
 from nlu.intent_classification import *
 from nlu.named_entity import *
-data = pd.read_csv("/home/pooja/Desktop/prototype/training_data.csv")
-dff = pd.read_csv("/home/pooja/Downloads/emp_details.csv")
+data = pd.read_csv("training_data.csv")
+dff = pd.read_csv("emp_details.csv")
 
 
 def training_pipeline(dataset):

@@ -1,8 +1,13 @@
+import pandas as pd
 from sklearn import svm
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import CountVectorizer
 from pickle import dump, load
+from nlu.trainingdata_preprocessing import pre_process_for_entity_extraction
+import sklearn_crfsuite
+import nltk
+from nlu.named_entity import dff, cdf
 
 
 def intent_classify(dataset):
@@ -26,9 +31,9 @@ def intent_classify(dataset):
 
 
 def test_input(user_input):
-    svc = load(open('/home/pooja/Desktop/prototype/nlu/model.pkl', 'rb'))
-    vectorizer = load(open('/home/pooja/Desktop/prototype/nlu/featurizer.pkl', 'rb'))
-    le = load(open('/home/pooja/Desktop/prototype/nlu/label_encoding.pkl', 'rb'))
+    svc = load(open('model.pkl', 'rb'))
+    vectorizer = load(open('featurizer.pkl', 'rb'))
+    le = load(open('label_encoding.pkl', 'rb'))
     x_ = vectorizer.transform([user_input])
     results = svc.predict_proba(x_)[0]
     intent = le.inverse_transform(svc.predict(x_))[0]
@@ -127,7 +132,7 @@ def train_entity(data):
 
 def test(user_input):
     entity_list = []; entity_tok = []
-    crf = load(open('/home/pooja/Desktop/prototype/nlu/entity_extraction.pkl', 'rb'))
+    crf = load(open('entity_extraction.pkl', 'rb'))
     tokens = nltk.word_tokenize(user_input)
     tag = nltk.pos_tag(tokens)
     # print(tag)
