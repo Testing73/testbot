@@ -314,7 +314,7 @@ class ActionCurrencyConverter(Action):
 "EUR": ["EUR", "euro", "Euro", "germany currency", "eur", "france currency", "Belgium currency", "Italy curreny", "spain currency"],
 "USD": ["USD", "dollars", "usd", "United states dollar", "US dollar", "United States of America dollar", "United states of America currency",  "US currency", "United States currency"],
 "YEN": ["Yen", "Japan yen", "Japanese yen", "YEN", "JPY", "jpy yen", "japan currency", "japanese currency"],
-"Pound":["POUND", "pound sterling", "gbp", "GBP", "UK pound", "united kingdom pound", "UK currency", "United kingdom currency", "UK pound sterling", "United Kingdom pound sterling", "gbp sterling"],
+"Pound":["POUND", "pound sterling", "gbp", "GBP", "UK pound", "united kingdom pound", "UK currency", "United kingdom currency", "UK pound sterling", "United Kingdom pound sterling", "gbp sterling", "pound"],
 "NZD":  ["NZD", "Newzland dollar", "nzd", "new zealand dollar", "new zealand currency", "newzealand currency", "nz dollar", "nz currency", "NZD"],
 "AUD":  ["AUD", "Australian dollar", "AU dollar", "au dollar", "aud", "australia dollar", "australia currency", "australian currency", "AUD"],
 "PKR":  ["PKR", "pakistan rupee", "pakistani rupee", "pak rupee", "pkr", "pakistani currency","pakistan currency", "pak currency", "PKD"],
