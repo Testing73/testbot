@@ -26,9 +26,9 @@ def intent_classify(dataset):
 
 
 def test_input(user_input):
-    svc = load(open('model.pkl', 'rb'))
-    vectorizer = load(open('featurizer.pkl', 'rb'))
-    le = load(open('label_encoding.pkl', 'rb'))
+    svc = load(open('nlu/model.pkl', 'rb'))
+    vectorizer = load(open('nlu/featurizer.pkl', 'rb'))
+    le = load(open('nlu/label_encoding.pkl', 'rb'))
     x_ = vectorizer.transform([user_input])
     results = svc.predict_proba(x_)[0]
     intent = le.inverse_transform(svc.predict(x_))[0]
