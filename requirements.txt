@@ -32,7 +32,7 @@ sklearn-crfsuite==0.3.6
 soupsieve==2.0
 tabulate==0.8.7
 tqdm==4.45.0
-urllib3==1.25.9
+urllib3==1.26.5
 Werkzeug==1.0.1
 wolframalpha==4.0.0
 word2number==1.1
